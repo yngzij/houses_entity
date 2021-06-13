@@ -1,1 +1,3 @@
-module "houses_entity"
+module houses_entity
+
+go 1.14
