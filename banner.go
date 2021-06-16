@@ -11,6 +11,6 @@ type Banner struct {
 	Updated  time.Time `gorm:"updated"`
 }
 
-func (b Banner)TableName() string {
+func (b Banner) TableName() string {
 	return "banners"
 }
