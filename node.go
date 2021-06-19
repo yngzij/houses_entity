@@ -2,7 +2,7 @@ package houses_entity
 
 import "time"
 
-type Menu struct {
+type Node struct {
 	Id       int       `gorm:"id"`
 	ImageURL string    `gorm:"image_url"`
 	MenuId   int       `gorm:"menu_id"`
@@ -13,6 +13,6 @@ type Menu struct {
 	Created  time.Time `gorm:"created"`
 }
 
-func (m Menu) TableName() string {
-	return "menus"
+func (n Node) TableName() string {
+	return "nodes"
 }
