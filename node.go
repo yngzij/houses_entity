@@ -7,9 +7,9 @@ type Node struct {
 	ImageURL string    `gorm:"image_url"`
 	Title    string    `gorm:"title"`
 	Sort     int       `gorm:"sort"`
-	Deleted  time.Time `gorm:"deleted"`
-	Updated  time.Time `gorm:"updated"`
-	Created  time.Time `gorm:"created"`
+	DeletedAt  time.Time `gorm:"deleted_at"`
+	UpdatedAt  time.Time `gorm:"updated_at"`
+	CreatedAt  time.Time `gorm:"created_at"`
 }
 
 func (n Node) TableName() string {
