@@ -13,3 +13,7 @@ type Advert struct {
 	UpdatedAt time.Time `gorm:"updated_at"`
 	CreatedAt time.Time `gorm:"created_at"`
 }
+
+func (a Advert) TableName() string {
+	return "adverts"
+}
