@@ -3,12 +3,13 @@ package houses_entity
 import "time"
 
 type Advert struct {
-	Id        int       `json:"id"`
-	UsedNum   int       `json:"used_num"`
-	UnusedNum int       `json:"unused_num"`
-	TotalNum  int       `json:"total_num"`
-	Status    int       `json:"status"`
-	Sort      int       `json:"sort"`
+	Id        int       `gorm:"id"`
+	UsedNum   int       `gorm:"used_num"`
+	UnusedNum int       `gorm:"unused_num"`
+	UserId    int       `gorm:"user_id"`
+	TotalNum  int       `gorm:"total_num"`
+	Status    int       `gorm:"status"`
+	Sort      int       `gorm:"sort"`
 	DeletedAt time.Time `gorm:"deleted_at"`
 	UpdatedAt time.Time `gorm:"updated_at"`
 	CreatedAt time.Time `gorm:"created_at"`

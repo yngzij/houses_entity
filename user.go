@@ -7,6 +7,7 @@ type User struct {
 	AdvertId  int       `gorm:"advert_id"`
 	Avatar    string    `gorm:"avatar"`
 	NickName  string    `gorm:"nick_name"`
+	OpenId    string    `gorm:"openid"`
 	RealName  string    `gorm:"real_name"`
 	Location  string    `gorm:"location"`
 	DeletedAt time.Time `gorm:"deleted_at"`
