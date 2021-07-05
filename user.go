@@ -11,7 +11,7 @@ type User struct {
 	Country   string     `gorm:"country"`
 	City      string     `gorm:"city"`
 	UserId    string     `gorm:"user_id"`
-	OpenId    string     `gorm:"openid"`
+	OpenId    string     `gorm:"open_id"`
 	RealName  string     `gorm:"real_name"`
 	UpdatedAt time.Time  `gorm:"updated_at"`
 	CreatedAt time.Time  `gorm:"created_at"`
