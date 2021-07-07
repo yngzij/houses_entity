@@ -15,6 +15,7 @@ type Advert struct {
 	UnusedNum int        `gorm:"unused_num"`
 	UserId    int        `gorm:"user_id"`
 	OpenId    string     `gorm:"open_id"`
+	GroupId   int        `gorm:"group_id"`
 	TotalNum  int        `gorm:"total_num"`
 	Desc      string     `gorm:"desc"`
 	Status    int        `gorm:"status"`
