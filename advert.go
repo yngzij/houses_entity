@@ -11,11 +11,13 @@ const (
 type Advert struct {
 	Id        int        `gorm:"id"`
 	UsedNum   int        `gorm:"used_num"`
+	Avatar    string     `gorm:"avatar"`
+	NickName  string     `gorm:"nick_name"`
 	Title     string     `gorm:"title"`
 	UnusedNum int        `gorm:"unused_num"`
 	UserId    int        `gorm:"user_id"`
 	OpenId    string     `gorm:"open_id"`
-	GroupId   int        `gorm:"group_id"`
+	GroupId   string     `gorm:"group_id"`
 	TotalNum  int        `gorm:"total_num"`
 	Desc      string     `gorm:"desc"`
 	Status    int        `gorm:"status"`
