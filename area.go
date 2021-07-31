@@ -1,14 +1,17 @@
 package houses_entity
 
+import "time"
+
 type Area struct {
 	Id        int        `gorm:"id"`
 	Value     string     `gorm:"value"`
+	Code      string     `gorm:"code"`
 	DeletedAt *time.Time `gorm:"deleted_at"`
 	UpdatedAt time.Time  `gorm:"updated_at"`
 	CreatedAt time.Time  `gorm:"created_at"`
-	AdvertId int    `gorm:"advert_id"`
+	AdvertId  int        `gorm:"advert_id"`
 }
 
-func (Area)TableName() string {
+func (Area) TableName() string {
 	return "areas"
 }
