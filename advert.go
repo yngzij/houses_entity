@@ -14,6 +14,7 @@ type Advert struct {
 	Avatar      string     `gorm:"avatar"`
 	NickName    string     `gorm:"nick_name"`
 	Title       string     `gorm:"title"`
+	AreaCode    string     `gorm:"area_code"`
 	UnusedNum   int        `gorm:"unused_num"`
 	ChatGroupId string     `gorm:"chat_group_id"`
 	UserId      int        `gorm:"user_id"`
