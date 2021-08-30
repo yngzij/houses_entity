@@ -6,6 +6,11 @@ const (
 	AdvertAuditSuccess = 1 // 审核成功
 	AdvertAuditFailure = 2 // 审核失败
 	AdvertAuditing     = 3 // 审核中
+
+	AdvertFnished  = 4 // 完成
+	Adverting      = 5 // 发布中
+	AdvertCanceled = 6 // 取消
+	AdvertDeleted  = 7 // 已经删除
 )
 
 type Advert struct {
