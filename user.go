@@ -4,6 +4,7 @@ import "time"
 
 type User struct {
 	Id          int        `gorm:"id"`
+	UserID      string     `gorm:"user_id"`
 	AdvertId    int        `gorm:"advert_id"`
 	Avatar      string     `gorm:"avatar"`
 	NickName    string     `gorm:"nick_name"`
