@@ -14,17 +14,17 @@ const (
 )
 
 type Advert struct {
-	Id          int        `gorm:"id"`
-	UsedNum     int        `gorm:"used_num"`
+	ID      int `gorm:"id"`
+	UsedNum int `gorm:"used_num"`
 	Avatar      string     `gorm:"avatar"`
 	NickName    string     `gorm:"nick_name"`
 	Title       string     `gorm:"title"`
 	AreaCode    string     `gorm:"area_code"`
-	UnusedNum   int        `gorm:"unused_num"`
-	ChatGroupId string     `gorm:"chat_group_id"`
-	UserId      int        `gorm:"user_id"`
-	OpenId      string     `gorm:"open_id"`
-	TotalNum    int        `gorm:"total_num"`
+	UnusedNum   int    `gorm:"unused_num"`
+	ChatGroupID string `gorm:"chat_group_id"`
+	UserId      int    `gorm:"user_id"`
+	OpenID   string `gorm:"open_id"`
+	TotalNum int    `gorm:"total_num"`
 	Desc        string     `gorm:"desc"`
 	Status      int        `gorm:"status"`
 	Sort        int        `gorm:"sort"`

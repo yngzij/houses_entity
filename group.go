@@ -3,10 +3,10 @@ package houses_entity
 import "time"
 
 type Group struct {
-	Id          int        `gorm:"id"`
+	ID          int        `gorm:"id"`
 	Phone       string     `gorm:"phone"`
-	ChatGroupId string     `gorm:"chat_group_id"`
-	AdvertId    int        `gorm:"advert_id"`
+	ChatGroupID string     `gorm:"chat_group_id"`
+	AdvertID    int        `gorm:"advert_id"`
 	OpenId      string     `gorm:"open_id"`
 	Avatar      string     `gorm:"avatar"`
 	DeletedAt   *time.Time `gorm:"deleted_at"`
