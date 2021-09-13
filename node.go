@@ -3,7 +3,7 @@ package houses_entity
 import "time"
 
 type Node struct {
-	Id        int        `gorm:"id"`
+	ID        int        `gorm:"id"`
 	ImageURL  string     `gorm:"image_url"`
 	Title     string     `gorm:"title"`
 	Sort      int        `gorm:"sort"`
