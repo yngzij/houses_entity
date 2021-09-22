@@ -1,16 +1,16 @@
 package houses_entity
 
-import "time"
+import (
+	"encoding/json"
+)
+
+type JSON json.RawMessage
 
 type Area struct {
-	Id        int        `gorm:"id"`
-	Name      string     `gorm:"Name"`
-	Code      string     `gorm:"code"`
-	Tag       int        `gorm:"tag"`
-	DeletedAt *time.Time `gorm:"deleted_at"`
-	UpdatedAt time.Time  `gorm:"updated_at"`
-	CreatedAt time.Time  `gorm:"created_at"`
-	AdvertId  int        `gorm:"advert_id"`
+	ID       int    `gorm:"id"`
+	Name     string `gorm:"name" json:"name"`
+	Code     string `gorm:"code" json:"code"`
+	AdvertId int    `gorm:"advert_id"`
 }
 
 func (Area) TableName() string {
