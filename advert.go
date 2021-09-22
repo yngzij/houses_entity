@@ -24,6 +24,7 @@ type Advert struct {
 	NickName    string         `gorm:"nick_name"`
 	Area        pq.StringArray `gorm:"type:text[]"`
 	Title       string         `gorm:"title"`
+	Local       string         `gorm:"local"`
 	ChatGroupID string         `gorm:"chat_group_id"`
 	UserID      string         `gorm:"user_id"`
 	Permission  int            `gorm:"permission"`
