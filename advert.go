@@ -17,6 +17,15 @@ const (
 	AdvertDeleted  = 7 // 已经删除
 )
 
+type AdvertStatus int
+
+const (
+	AdventExpired    AdvertStatus = 1
+	AdventPublishing AdvertStatus = 2
+	AdventFinished   AdvertStatus = 3
+	AdventDeleted    AdvertStatus = 4
+)
+
 type Advert struct {
 	ID          int            `gorm:"id"`
 	UsedNum     int            `gorm:"used_num"`
@@ -31,7 +40,7 @@ type Advert struct {
 	OpenID      string         `gorm:"open_id"`
 	TotalNum    int            `gorm:"total_num"`
 	Desc        string         `gorm:"desc"`
-	Status      int            `gorm:"status"`
+	Status      AdvertStatus   `gorm:"status"`
 	Sort        int            `gorm:"sort"`
 	DeletedAt   *time.Time     `gorm:"deleted_at"`
 	UpdatedAt   time.Time      `gorm:"updated_at"`
