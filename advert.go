@@ -33,6 +33,7 @@ type Advert struct {
 	DeletedAt   gorm.DeletedAt `gorm:"deleted_at"`
 	UpdatedAt   time.Time      `gorm:"updated_at"`
 	CreatedAt   time.Time      `gorm:"created_at"`
+	ExpiredAt   time.Time      `gorm:"expired_at"`
 	Phone       string         `gorm:"phone"`
 }
 
