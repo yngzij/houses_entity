@@ -8,7 +8,7 @@ type Group struct {
 	ChatGroupID string     `gorm:"chat_group_id"`
 	AdvertID    int        `gorm:"advert_id"`
 	NickName    string     `gorm:"nick_name"`
-	UserID      string     `gorm:"user_id"`
+	UserID      string     `gorm:"user_id, index:idx_uid, type:btree"`
 	Avatar      string     `gorm:"avatar"`
 	DeletedAt   *time.Time `gorm:"deleted_at"`
 	UpdatedAt   time.Time  `gorm:"updated_at"`

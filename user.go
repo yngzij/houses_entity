@@ -13,7 +13,7 @@ type User struct {
 	Country     string     `gorm:"country"`
 	City        string     `gorm:"city"`
 	ChatGroupID string     `gorm:"chat_group_id"`
-	OpenID      string     `gorm:"open_id"`
+	OpenID      string     `gorm:"open_id;index:idx_uid"`
 	RealName    string     `gorm:"real_name"`
 	UpdatedAt   time.Time  `gorm:"updated_at"`
 	CreatedAt   time.Time  `gorm:"created_at"`
